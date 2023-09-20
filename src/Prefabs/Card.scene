@@ -1,0 +1,57 @@
+{
+    "id": "4e8eb515-d8ce-4167-9015-a69ce8e118f6",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "68b57b61-282b-4468-bda3-9fff10f472ec",
+            "label": "card",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "07fef4b3-2cb1-4239-ac75-35a2a8a38c12",
+                    "label": "curve4",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "Animal-Profile-Base"
+                    },
+                    "x": 6.78348266260025,
+                    "y": 7.11554245756804,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "b26a61a7-9b83-40f7-bd10-f31e9365363c",
+                    "label": "chicken",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "chicken"
+                    },
+                    "x": 1,
+                    "y": -13,
+                    "scaleX": 0.8,
+                    "scaleY": 0.8
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

@@ -1,0 +1,279 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "src/Prefabs/Alphabet.js",
+                "type": "script",
+                "key": "Alphabet"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Animal-Profile-Base.png",
+                "type": "image",
+                "key": "Animal-Profile-Base"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/background.png",
+                "type": "image",
+                "key": "background"
+            },
+            {
+                "url": "assets/firstscene/backimg2.jpeg",
+                "type": "image",
+                "key": "backimg2"
+            },
+            {
+                "url": "assets/gamePlay/popup/Black-Screen.png",
+                "type": "image",
+                "key": "Black-Screen"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Branch-Full.png",
+                "type": "image",
+                "key": "Branch-Full"
+            },
+            {
+                "url": "src/Prefabs/Card.js",
+                "type": "script",
+                "key": "Card"
+            },
+            {
+                "url": "assets/gamePlay/animals/chicken.png",
+                "type": "image",
+                "key": "chicken"
+            },
+            {
+                "url": "assets/secondscene/curve4.png",
+                "type": "image",
+                "key": "curve4"
+            },
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "url": "assets/gamePlay/animals/dog1.png",
+                "type": "image",
+                "key": "dog1"
+            },
+            {
+                "url": "assets/gamePlay/animals/duck.png",
+                "type": "image",
+                "key": "duck"
+            },
+            {
+                "url": "assets/gamePlay/animals/fox.png",
+                "type": "image",
+                "key": "fox"
+            },
+            {
+                "url": "src/script/GameManager.js",
+                "type": "script",
+                "key": "GameManager"
+            },
+            {
+                "url": "src/Prefabs/Holder.js",
+                "type": "script",
+                "key": "Holder"
+            },
+            {
+                "url": "src/script/InputManager.js",
+                "type": "script",
+                "key": "InputManager"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Leaf-Bottom.png",
+                "type": "image",
+                "key": "Leaf-Bottom"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Leaf-Top.png",
+                "type": "image",
+                "key": "Leaf-Top"
+            },
+            {
+                "url": "assets/gamePlay/animals/lion.png",
+                "type": "image",
+                "key": "lion"
+            },
+            {
+                "url": "assets/gamePlay/splaceScreen/Logo.png",
+                "type": "image",
+                "key": "Logo"
+            },
+            {
+                "url": [
+                    "assets/sound/matching.wav"
+                ],
+                "type": "audio",
+                "key": "matching"
+            },
+            {
+                "url": "assets/secondscene/menu.png",
+                "type": "image",
+                "key": "menu"
+            },
+            {
+                "url": "assets/secondscene/mute.png",
+                "type": "image",
+                "key": "mute"
+            },
+            {
+                "url": "assets/secondscene/font/Next.png",
+                "type": "image",
+                "key": "Next"
+            },
+            {
+                "url": "assets/gamePlay/popup/Next-Button.png",
+                "type": "image",
+                "key": "Next-Button"
+            },
+            {
+                "url": "assets/gamePlay/animals/panda.png",
+                "type": "image",
+                "key": "panda"
+            },
+            {
+                "url": "assets/gamePlay/animals/pig.png",
+                "type": "image",
+                "key": "pig"
+            },
+            {
+                "url": "assets/gamePlay/popup/Plain-Button.png",
+                "type": "image",
+                "key": "Plain-Button"
+            },
+            {
+                "url": "assets/secondscene/font/Play.png",
+                "type": "image",
+                "key": "Play"
+            },
+            {
+                "url": "assets/gamePlay/popup/Pop-Up-Box.png",
+                "type": "image",
+                "key": "Pop-Up-Box"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Random-Word-Box.png",
+                "type": "image",
+                "key": "Random-Word-Box"
+            },
+            {
+                "url": "assets/secondscene/font/Replay.png",
+                "type": "image",
+                "key": "Replay"
+            },
+            {
+                "url": "assets/gamePlay/popup/Retry-Button.png",
+                "type": "image",
+                "key": "Retry-Button"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Shadow-[-ON-Stick-].png",
+                "type": "image",
+                "key": "Shadow-[-ON-Stick-]"
+            },
+            {
+                "url": "assets/gamePlay/animals/sheep.png",
+                "type": "image",
+                "key": "sheep"
+            },
+            {
+                "url": "assets/gamePlay/animals/snail.png",
+                "type": "image",
+                "key": "snail"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Sound-OFF.png",
+                "type": "image",
+                "key": "Sound-OFF"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Sound-ON.png",
+                "type": "image",
+                "key": "Sound-ON"
+            },
+            {
+                "url": [
+                    "assets/sound/sound2.wav"
+                ],
+                "type": "audio",
+                "key": "sound2"
+            },
+            {
+                "url": "assets/gamePlay/splaceScreen/Start-Button.png",
+                "type": "image",
+                "key": "Start-Button"
+            },
+            {
+                "url": [
+                    "assets/sound/starting.wav"
+                ],
+                "type": "audio",
+                "key": "starting"
+            },
+            {
+                "url": "assets/secondscene/font/Timeout.png",
+                "type": "image",
+                "key": "Timeout"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Timer-Base.png",
+                "type": "image",
+                "key": "Timer-Base"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Timer-Inner-Fill.png",
+                "type": "image",
+                "key": "Timer-Inner-Fill"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Timer-Leaf.png",
+                "type": "image",
+                "key": "Timer-Leaf"
+            },
+            {
+                "url": "assets/gamePlay/animals/turtle.png",
+                "type": "image",
+                "key": "turtle"
+            },
+            {
+                "url": "src/script/TweenManager.js",
+                "type": "script",
+                "key": "TweenManager"
+            },
+            {
+                "url": "assets/secondscene/unmute.png",
+                "type": "image",
+                "key": "unmute"
+            },
+            {
+                "url": "assets/secondscene/font/Well-done.png",
+                "type": "image",
+                "key": "Well-done"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Wodden-Stick.png",
+                "type": "image",
+                "key": "Wodden-Stick"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Word-Base.png",
+                "type": "image",
+                "key": "Word-Base"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/Word-Box.png",
+                "type": "image",
+                "key": "Word-Box"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
