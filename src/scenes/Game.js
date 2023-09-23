@@ -41,6 +41,17 @@ class Game extends Phaser.Scene {
 		// random_Word_Box
 		this.add.image(1561, 601, "Random-Word-Box");
 
+		// leaf_Top_1
+		this.add.image(270, 29, "Leaf-Top");
+
+		// home_Button
+		const home_Button = this.add.image(227, 102, "home-Button");
+		home_Button.scaleX = 0.8;
+		home_Button.scaleY = 0.8;
+
+		// leaf_Bottom_1
+		this.add.image(201, 146, "Leaf-Bottom");
+
 		// holderContainer
 		const holderContainer = this.add.container(0, 0);
 
@@ -95,8 +106,14 @@ class Game extends Phaser.Scene {
 		replay_text.setStyle({ "color": "#5c1303", "fontSize": "40px" });
 		container_popup.add(replay_text);
 
+		// home_btn
+		const home_btn = this.add.image(-3, 61, "home_btn");
+		home_btn.visible = false;
+		container_popup.add(home_btn);
+
 		this.soundOnBtn = soundOnBtn;
 		this.soundOffBtn = soundOffBtn;
+		this.home_Button = home_Button;
 		this.holderContainer = holderContainer;
 		this.animalCardContainer = animalCardContainer;
 		this.alphabetContainer = alphabetContainer;
@@ -108,6 +125,7 @@ class Game extends Phaser.Scene {
 		this.retry_Button = retry_Button;
 		this.replay_Button = replay_Button;
 		this.replay_text = replay_text;
+		this.home_btn = home_btn;
 
 		this.events.emit("scene-awake");
 	}
@@ -116,6 +134,8 @@ class Game extends Phaser.Scene {
 	soundOnBtn;
 	/** @type {Phaser.GameObjects.Image} */
 	soundOffBtn;
+	/** @type {Phaser.GameObjects.Image} */
+	home_Button;
 	/** @type {Phaser.GameObjects.Container} */
 	holderContainer;
 	/** @type {Phaser.GameObjects.Container} */
@@ -138,6 +158,8 @@ class Game extends Phaser.Scene {
 	replay_Button;
 	/** @type {Phaser.GameObjects.Text} */
 	replay_text;
+	/** @type {Phaser.GameObjects.Image} */
+	home_btn;
 
 	/* START-USER-CODE */
 
@@ -151,6 +173,7 @@ class Game extends Phaser.Scene {
 		this.oTweenManager = new TweenManager(this);
 		this.startTimer()
 
+		// this.localStorage.setItem("currentLevel", this.currentLevel);
 		// var music = this.sound.add("starting");
 		// music.play();
 		// music.setVolume(0.2);
@@ -159,7 +182,8 @@ class Game extends Phaser.Scene {
 		//randon animal images
 		this.animalCard = new Card(this, 640, 400)
 		this.animalCardContainer.add(this.animalCard);
-		this.setLevel(this.oGameManager.currentLevel);
+		// this.setLevel(this.oGameManager.currentLevel);
+		this.setLevel(nCurrentLevel);
 	}
 	startTimer() {
 		this.totalTime = this.oGameManager.totalMiliSec;
@@ -172,7 +196,7 @@ class Game extends Phaser.Scene {
 		this.timerFill.mask = new Phaser.Display.Masks.BitmapMask(this, this.timerMask);
 
 		this.gameObjectToFollow = this.add.sprite(this.timerFill.x + 230, this.timerFill.y, "sTimer-Leaf");
-		this.gameObjectToFollow.setScale(0.7 , 0.65);
+		this.gameObjectToFollow.setScale(0.7, 0.65);
 		// Replace with your game object image
 		this.container_timer.add(this.timerBase);
 		this.container_timer.add(this.timerFill);
@@ -337,6 +361,9 @@ class Game extends Phaser.Scene {
 		this.alphabetContainer.removeAll(true);
 		this.holderArr = [];
 		switch (words.length) {
+			case 6:
+				this.startX = 240;
+				break;
 			case 7:
 				this.startX = 130;
 				break;
@@ -390,6 +417,8 @@ class Game extends Phaser.Scene {
 		}
 		return false; // Position is not used
 	}
+
+
 	update() {
 
 	}

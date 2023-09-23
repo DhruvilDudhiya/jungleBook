@@ -85,6 +85,42 @@
             "y": 601
         },
         {
+            "type": "Image",
+            "id": "f59f699e-5fc5-4d76-96c4-bbc593631694",
+            "label": "leaf_Top_1",
+            "components": [],
+            "texture": {
+                "key": "Leaf-Top"
+            },
+            "x": 270,
+            "y": 29
+        },
+        {
+            "type": "Image",
+            "id": "c7ec32f1-8224-420d-842c-ad0655fd6260",
+            "label": "home_Button",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "home-Button"
+            },
+            "x": 227,
+            "y": 102,
+            "scaleX": 0.8,
+            "scaleY": 0.8
+        },
+        {
+            "type": "Image",
+            "id": "67ef00ad-50dc-42a5-8e43-1574b31d1d5a",
+            "label": "leaf_Bottom_1",
+            "components": [],
+            "texture": {
+                "key": "Leaf-Bottom"
+            },
+            "x": 201,
+            "y": 146
+        },
+        {
             "type": "Container",
             "id": "52fcda52-6d7f-4c21-a51c-934e41aec0c5",
             "label": "holderContainer",
@@ -208,6 +244,19 @@
                     "text": "REPLAY",
                     "fontSize": "40px",
                     "color": "#5c1303"
+                },
+                {
+                    "type": "Image",
+                    "id": "0c7c6a13-7fb6-4f45-8d10-efd712a17b22",
+                    "label": "home_btn",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "home_btn"
+                    },
+                    "x": -3,
+                    "y": 61,
+                    "visible": false
                 }
             ]
         }

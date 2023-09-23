@@ -68,13 +68,13 @@ class Alphabet extends Phaser.GameObjects.Container {
 		this.oSceneObj.input.on('drag', function (pointer, gameObject, dragX, dragY) {
 			// this.oGameManager.alphabetContainer
 			this.oSceneObj.alphabetContainer.bringToTop(gameObject);
-			if (gameObject == this) {
+			if (gameObject == this && this.oSceneObj.container_popup.scale == 0) {
 				gameObject.x = dragX;
 				gameObject.y = dragY;
 			}
 		}, this);
 		this.oSceneObj.input.on('dragend', function (pointer, gameObject, dragX, dragY) {
-			if (gameObject == this && this.isMovable && this.oSceneObj.timeLeft  > 0 ) { //gameObject
+			if (gameObject == this && this.isMovable && this.oSceneObj.timeLeft > 0) { //gameObject
 				gameObject.z = 0;
 				var minDistance = 100;
 				var deckType;
@@ -106,12 +106,14 @@ class Alphabet extends Phaser.GameObjects.Container {
 					if (this.oSceneObj.holderArr.push() == this.oSceneObj.sco) {
 						console.log("winner", this.oSceneObj.holderArr);
 						this.oSceneObj.holderArr = [];
-						if (this.oSceneObj.oGameManager.currentLevel == this.oSceneObj.oGameManager.isLastLevel) {
+						// if (this.oSceneObj.oGameManager.currentLevel == this.oSceneObj.oGameManager.isLastLevel) {
+						if (nCurrentLevel == this.oSceneObj.oGameManager.isLastLevel) {
 							this.oSceneObj.retry_Button.visible = false;
 							this.oSceneObj.next_Button.visible = false;
-							this.oSceneObj.replay_Button.visible = true;
-							this.oSceneObj.replay_text.visible = true;
-							this.oSceneObj.popup_txt.text = "WellDone";
+							this.oSceneObj.replay_Button.visible = false;
+							this.oSceneObj.replay_text.visible = false;
+							this.oSceneObj.home_btn.visible = true;
+							this.oSceneObj.popup_txt.text = "completed";
 							this.oSceneObj.oTweenManager.popUpTweenAnimation(this.oSceneObj.container_popup);
 							this.oSceneObj.timerEvent.destroy();
 							// this.oSceneObj.gameObjectToFollow.setVisible(true);
@@ -130,7 +132,7 @@ class Alphabet extends Phaser.GameObjects.Container {
 					// this.oSceneObj.sound.add("sound2");
 					// this.oSceneObj.sound.play("sound2");
 				}
-			} 
+			}
 		}, this)
 	}
 	autoMatchWithHolder(holder) {

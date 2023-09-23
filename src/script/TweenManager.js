@@ -8,7 +8,6 @@ class TweenManager {
             scaleX: "*=0.9",
             scaleY: "*=0.9",
             duration: 200,
-
             yoyo: true,
             ease: 'Sine.easeInOut',
             onComplete: () => {
@@ -41,6 +40,24 @@ class TweenManager {
             onComplete: () => {
                 targetName.visible = false;
             }
+        })
+    }
+    pointerOverTween(btn, initSclae) {
+        this.oScene.input.setDefaultCursor('pointer');
+        this.oScene.tweens.add({
+            targets: btn,
+            scaleX: initSclae + 0.02,
+            scaleY: initSclae + 0.02,
+            duration: 50
+        })
+    }
+    pointerOutTween(btn , initSclae){
+        this.oScene.input.setDefaultCursor('default');
+        this.oScene.tweens.add({
+            targets: btn,
+            scaleX: initSclae,
+            scaleY: initSclae,
+            duration: 50
         })
     }
     logoTween() {

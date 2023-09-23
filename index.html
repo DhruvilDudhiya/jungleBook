@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
-	<title>JungleBook</title>
+
+	<title>Jungle Book</title>
 
 	<script src="lib/phaser.min.js"></script>
 	<script src="src/components/UserComponent.js"></script>
@@ -18,24 +18,28 @@
 	<script src="src/main.js"></script>
 
 	<link rel="stylesheet preload" as="font" href="assets/font/ComicSansMSBold.ttf" type="font/ttf" crossorigin />
-	<script> var game</script>
 
 	<style>
 		@font-face {
 			font-family: 'Courier';
 			src: url('assets/font/ComicSansMSBold.ttf');
 		}
+
 		body {
 			background: #2f2f2f;
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
 		}
-		
 	</style>
 
 </head>
 
 <body>
+	<script>
+		var game;
+		var nCurrentLevel = 1;
+	</script>
 </body>
 
 </html>

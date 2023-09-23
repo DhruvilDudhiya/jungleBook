@@ -52,12 +52,34 @@ class Level extends Phaser.Scene {
 				scaleY: "*=0.9",
 				duration: 100,
 				yoyo: true,
-				delay : 100,
+				delay: 100,
 				onComplete: () => {
 					this.scene.start("Game");
 				}
 			});
 		}, this)
+		this.play.on('pointerover', function () {
+			this.input.setDefaultCursor('pointer');
+			this.add.tween({
+				targets: this.play,
+				scaleX: 1 + 0.05,
+				scaleY: 1 + 0.05,
+				duration: 50
+			})
+		}, this)
+		this.play.on('pointerout', function () {
+			this.input.setDefaultCursor('default');
+             this.add.tween({
+				targets: this.play,
+				scaleX: 1,
+				scaleY: 1,
+				duration: 50,
+				onComplete: () => {
+						this.play.setScale(1);
+				}
+			 })
+		},this)
+
 	}
 	/* END-USER-CODE */
 }

@@ -68,6 +68,7 @@ class Preload extends Phaser.Scene {
 			"timer-fill"
 		).setScale(1.5, 1.1);
 		this.innerBar.setOrigin(0, 0.5);
+		this.innerBar.setVisible(false);
 
 		this.innerBarWidth = this.innerBar.displayWidth;
 
@@ -89,8 +90,9 @@ class Preload extends Phaser.Scene {
 		const progressIncrement = 1 / numIntervals;
 
 		const updateProgressBar = () => {
+			this.innerBar.setVisible(true);
 			const currentProgress = currentInterval * progressIncrement;
-			 // Replace with your game object image
+			// Replace with your game object image
 			this.maskGraphics.clear();
 			this.maskGraphics.fillStyle(0xffffff);
 			this.maskGraphics.fillRect(
@@ -104,7 +106,9 @@ class Preload extends Phaser.Scene {
 
 			if (currentProgress >= 1) {
 				clearInterval(progressInterval);
-				this.scene.start("Level");
+				setTimeout(() => {
+					this.scene.start("Level");
+				}, 200);
 			}
 		};
 

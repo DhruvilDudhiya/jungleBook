@@ -77,6 +77,16 @@
                 "key": "Holder"
             },
             {
+                "url": "assets/gamePlay/popup/home_btn.png",
+                "type": "image",
+                "key": "home_btn"
+            },
+            {
+                "url": "assets/gamePlay/gamesUi/home-Button.png",
+                "type": "image",
+                "key": "home-Button"
+            },
+            {
                 "url": "src/script/InputManager.js",
                 "type": "script",
                 "key": "InputManager"
